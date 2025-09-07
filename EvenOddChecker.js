@@ -1,3 +1,4 @@
+//  EvenOddChecker
 let userInteger;
 function evenOddChecker() {
     let inputValue = document.querySelector('#evenOddInput').value.trim();
@@ -19,4 +20,7 @@ function evenOddChecker() {
         evenOddOutput.innerHTML = 'Is Odd';
     }
 }
+
+
+
 

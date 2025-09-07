@@ -13,7 +13,11 @@
     "shape": {
       "type": "square",
       "stroke": {
+<<<<<<< HEAD
         "width": 0,
+=======
+        "width": 20,
+>>>>>>> 1b5a589 ((style): Handle evenOddChecker Design)
         "color": "#e16c6c"
       },
       "polygon": {
