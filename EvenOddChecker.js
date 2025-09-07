@@ -19,3 +19,4 @@ function evenOddChecker() {
         evenOddOutput.innerHTML = 'Is Odd';
     }
 }
+

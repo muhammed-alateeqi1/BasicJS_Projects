@@ -1,18 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    background-color: rgb(2, 2, 31);
+
+body {
+    background: #000000;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(30, 0, 0, 1) 100%);
 }
-.center{
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.container{
+
+.container {
     width: 1200px;
     margin: auto;
     height: 100vh;
@@ -20,39 +34,46 @@ body{
     justify-content: center;
     align-items: center;
 }
-.evenOdd{
+
+.evenOdd {
     width: 70%;
     flex-direction: column;
     border: 1px solid #fff;
     border-radius: 10px;
     padding: 10px;
     height: 300px;
-    background-color: rgb(2, 2, 31);
+    /* background-color: rgb(2, 2, 31); */
 }
-.evenOdd h1{
- color: #fff;
- padding: 10px 0px;
+
+.evenOdd h1 {
+    color: #fff;
+    padding: 10px 0px;
 }
-.evenOdd input{
+
+.evenOdd input {
     width: 50%;
     padding: 10px 0px;
     margin: 10px 0px;
     border: 2px solid transparent;
 }
-.evenOdd input:focus{
+
+.evenOdd input:focus {
     width: 50%;
     padding: 10px 0px;
     margin: 10px 0px;
     border: 2px solid rgb(96, 212, 72);
     outline: none;
 }
-#evenOddInput::placeholder{
- text-align: center;
+
+#evenOddInput::placeholder {
+    text-align: center;
 }
-#evenOddInput{
- text-align: center;
+
+#evenOddInput {
+    text-align: center;
 }
-.evenOdd button{
+
+.evenOdd button {
     all: unset;
     padding: 5px 20px;
     margin-top: 5px;
@@ -61,9 +82,10 @@ body{
     color: white;
     cursor: pointer;
 }
-.evenOdd p{
+
+.evenOdd p {
     margin: 5px 0px;
     font-size: 20px;
     color: rgb(197, 168, 4);
     text-transform: uppercase;
- }
+}

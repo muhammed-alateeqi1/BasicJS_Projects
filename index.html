@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BasicJS Projects</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div id="particles-js"></div>
     <div class="container">
         <!-- Even Odd Checker -->
-         <section class="evenOdd center">
+        <section class="evenOdd center">
             <h1>Even & Odd Checker</h1>
-            <input type="text"  placeholder="Please Enter Your Number" id="evenOddInput">
+            <input type="text" placeholder="Please Enter Your Number" id="evenOddInput">
             <p></p>
             <button onclick="evenOddChecker()">Check</button>
-         </section>
+        </section>
     </div>
     <script src="EvenOddChecker.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function () {
+            console.log('particles.js config loaded');
+        });
+    </script>
+
 </body>
+
 </html>
