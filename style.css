@@ -9,6 +9,12 @@ body {
     background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(30, 0, 0, 1) 100%);
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 #particles-js {
     position: fixed;
     top: 0;
@@ -114,8 +120,69 @@ body {
 
 /*  The End Of EvenOdd Checker */
 
-.simple-calculator{
-    width: 200px;
-    height: 200px;
-    background: rgb(114, 111, 111);
+.simple-calculator {
+    width: 20%;
+    padding: 2px;
+    border-radius: 30px;
+    background: #292929;
+}
+
+.simple-calculator input {
+    all: unset;
+    background-color: #000;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px 30px 4px 4px;
+    width: 100%;
+    padding: 20px 0px;
+    margin-bottom: 15px;
+}
+
+.clc-body {
+    display: flex;
+    justify-content: center;
+}
+
+.clc-buttons {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px;
+}
+
+.clc-buttons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+    box-shadow:
+        inset 1px 1px 1px rgba(0, 0, 0, 0.8),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1),
+        0px 1px 1px rgba(0, 0, 0, 0.6),
+        -1px -1px 1px rgba(0, 0, 0, 0.05);
+    ;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    font-size: 20px;
+    color: #ffb1ac;
+    cursor: pointer;
+    transition: all ease .1s;
+}
+.clc-buttons li:hover{
+    background-color: #9b9b9b;
+    color: #fff;
+     box-shadow:
+        inset 1px 1px 1px rgba(0, 0, 0, 0.8),
+        inset -2px -2px 1px rgba(255, 255, 255, 0.1),
+        2px 2px 2px rgba(0, 0, 0, 0.6),
+        -1px -1px 1px rgba(0, 0, 0, 0.05);
+    ;
+}
+
+.clc-buttons .equal-btn {
+    background-color: #ffb1ac;
+    color: black;
+    font-weight: bold;
 }
