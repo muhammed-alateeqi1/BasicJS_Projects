@@ -25,28 +25,30 @@
 
         <!-- Simple Calculator -->
 <section class="simple-calculator">
-    <input type="text" id="calculatorInput">
+    <!-- <input type="text" id="calculatorInput"> -->
+    <div class="test" id="test" ></div>
     <div class="clc-body">
         <ul class="clc-buttons">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>/</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>x</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>-</li>
-            <li>0</li>
-            <li>.</li>
-            <li class="equal-btn">=</li>
-            <li>+</li>
+            <li onclick="One()" id="one">1</li>
+            <li onclick="Two()" id="two">2</li>
+            <li onclick="Three()" id="three">3</li>
+            <li onclick="Divide()" id="divide">/</li>
+            <li onclick="Four()" id="four">4</li>
+            <li onclick="Five()" id="five">5</li>
+            <li onclick="Six()" id="six">6</li>
+            <li onclick="Multiply()" id="multiply">x</li>
+            <li onclick="Seven()" id="seven">7</li>
+            <li onclick="Eight()" id="eight">8</li>
+            <li onclick="Nine()" id="nine">9</li>
+            <li onclick="Subtract()" id="subtract">-</li>
+            <li onclick="Zero()" id="zero">0</li>
+            <li onclick="Seperateor()" id="seperateor">.</li>
+            <li onclick="Equal()" class="equal-btn">=</li>
+            <li onclick="Plus()" id="plus-button">+</li>
         </ul>
     </div>
 </section>
+
     </div>
 
 
@@ -70,7 +72,7 @@
 
 
 
-
+    <script src="SimpleCalculator.js"></script>
     <script src="EvenOddChecker.js"></script>
     <script>
         particlesJS.load('particles-js', 'particlesjs-config.json', function () {

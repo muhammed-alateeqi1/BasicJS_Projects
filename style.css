@@ -127,16 +127,17 @@ ul {
     background: #292929;
 }
 
-.simple-calculator input {
-    all: unset;
+.simple-calculator .test {
     background-color: #000;
     font-size: 20px;
     text-align: center;
     color: #fff;
     border-radius: 30px 30px 4px 4px;
     width: 100%;
+    height: 20px;
     padding: 20px 0px;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 .clc-body {
@@ -186,3 +187,4 @@ ul {
     color: black;
     font-weight: bold;
 }
+
