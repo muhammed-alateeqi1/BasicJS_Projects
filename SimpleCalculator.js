@@ -1,88 +1,35 @@
-let one, two, three, four, five, six, seven, eight, nine, zero;
 
+let userInput = '';
 
-function One() {
-    one = 1;
-    console.log(1);
-    document.getElementById("test").innerHTML += one;
+function appendValue(value) {
+    userInput += value;
+    document.getElementById("test").innerHTML = userInput;
+    console.log(userInput);
 }
-function Two() {
-    two = 2;
-    console.log(two);
-    document.getElementById("test").innerHTML += two;
-}
-function Three() {
-    three = 3;
-    console.log(three);
-    document.getElementById("test").innerHTML += three;
-}
-function Four() {
-    four = 4;
-    console.log(four);
-    document.getElementById("test").innerHTML +=four;
+function calculate() {
+    let expression = userInput;
+    let tokens = expression.match(/\d+(\.\d+)?|\+|\-|\*|\//g);
+    for (let i = 0; i < tokens.length; i++) {
+        if (tokens[i] === "*" || tokens[i] === "/") {
+            let left = Number(tokens[i - 1]);
+            let right = Number(tokens[i + 1]);
+            let result = tokens[i] === "*" ? left * right : left / right;
+            tokens.splice(i - 1, 3, result);
+        }
+    }
+    for (let i = 0; i < tokens.length; i++) {
+        if (tokens[i] === "+" || tokens[i] === "-") {
+            let left = Number(tokens[i - 1]);
+            let right = Number(tokens[i + 1]);
+            let result = tokens[i] === "+" ? left + right : left - right;
 
-}
-function Five() {
-    five = 5;
-    console.log(five);
-    document.getElementById("test").innerHTML +=five;
-}
-function Six() {
-    six = 6;
-    console.log(six);
-    document.getElementById("test").innerHTML += six;
-}
-function Seven() {
-    seven = 7;
-    console.log(seven);
-    document.getElementById("test").innerHTML += seven;
-}
-function Eight() {
-    eight = 8;
-    console.log(eight);
-    document.getElementById("test").innerHTML += eight;
+            tokens.splice(i - 1, 3, result);
+            i--;
+        }
+        
+    }
+ document.getElementById("test").innerHTML = tokens[0];
+        userInput = tokens[0].toString();
 
 }
-function Nine() {
-    nine = 9;
-    console.log(nine);
-    document.getElementById("test").innerHTML += nine;
-}
-function Zero() {
-    zero = 0;
-    console.log(zero);
-    document.getElementById("test").innerHTML += zero;
-}
-//----------------
-// Operators 
-//----------------
 
-function Divide() {
-    let divideOperator = '/';
-    console.log(divideOperator);
-    document.getElementById("test").innerHTML += divideOperator;
-}
-function Multiply() {
-    let multiplyOperator = '*';
-    console.log(multiplyOperator);
-    document.getElementById("test").innerHTML += multiplyOperator;
-}
-function Subtract() {
-    let subtractOperator = '-';
-    console.log(subtractOperator);
-    document.getElementById("test").innerHTML += subtractOperator;
-}
-function Plus() {
-    let plusOperator = '+';
-    console.log(plusOperator);
-    document.getElementById("test").innerHTML += plusOperator;
-}
-function Seperateor() {
-    let seperateorOperator = '.';
-    console.log(seperateorOperator);
-    document.getElementById("test").innerHTML += seperateorOperator;
-}
-function Equal() {
-    let seperateorOperator = '=';
-    console.log(seperateorOperator);
-}
