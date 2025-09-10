@@ -30,6 +30,9 @@ function calculate() {
     }
  document.getElementById("test").innerHTML = tokens[0];
         userInput = tokens[0].toString();
-
+}
+function clearScreen() {
+    userInput = "";                
+    document.getElementById("test").innerHTML = "";
 }
 
