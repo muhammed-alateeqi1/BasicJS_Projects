@@ -14,17 +14,30 @@
 
 <body>
     <div id="particles-js"></div>
-    <div class="container">
+    <nav>
+        <ul class="nav-items">
+            <li>
+                <a href="#" data-target="calculator">Calculator</a>
+            </li>
+            <li>
+                <a href="#" data-target="evenOdd">Even Odd</a>
+            </li>
+            <li>
+                <a href="#" data-target="grad" >Grad</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container hide ">
         <!-- Even Odd Checker -->
-        <!-- <section class="evenOdd center">
+        <section id="evenOdd" class="evenOdd center ">
             <h1>Even & Odd Checker</h1>
             <input type="text" placeholder="Please Enter Your Number" id="evenOddInput">
             <p></p>
             <button onclick="evenOddChecker()">Check</button>
-        </section> -->
+        </section>
 
         <!-- Simple Calculator -->
-        <section class="simple-calculator">
+        <section id="calculator" class="simple-calculator ">
             <div class="clc-screen" id="clcScreen"></div>
             <div class="screen-actions">
                 <button class="clear-button" onclick="clearScreen()">Clear</button>
@@ -51,7 +64,23 @@
                 </ul>
             </div>
         </section>
-
+        <section id="grad" style="color: #fff;" class=" ">
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+            Waiting
+        </section>
     </div>
 
 
@@ -77,6 +106,7 @@
 
     <script src="SimpleCalculator.js"></script>
     <script src="EvenOddChecker.js"></script>
+    <script src="Navbar.Js"></script>
     <script>
         particlesJS.load('particles-js', 'particlesjs-config.json', function () {
             console.log('particles.js config loaded');
