@@ -31,7 +31,7 @@ nav {
 }
 
 .hide{
-    display: none;
+    display: none !important;
 }
 .show {
     display: block;
@@ -135,6 +135,7 @@ nav {
 
 .evenOdd button {
     all: unset;
+    text-align: center;
     padding: 12px 30px;
     margin-top: 15px;
     border: 1px solid rgb(255, 255, 255);
